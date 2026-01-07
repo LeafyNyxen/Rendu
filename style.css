@@ -1,0 +1,106 @@
+:root {
+    --herta-light: #9c84d9;
+    --herta-main: #7d5bbe;
+    --herta-dark: #4b307d;
+    --bg-site: #f3f0ff;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-site); /* Fond léger teinté violet */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Bannière Herta */
+.banner {
+    background: linear-gradient(135deg, var(--herta-main), var(--herta-dark));
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.banner-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.herta-gif {
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid var(--herta-light);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Système de groupes (Accordéons) */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+details {
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+summary {
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: white;
+    list-style: none;
+    border-left: 5px solid var(--herta-main);
+    transition: background 0.3s;
+}
+
+summary:hover {
+    background: #fcfaff;
+}
+
+/* Tableaux à l'intérieur des groupes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+td {
+    padding: 12px 20px;
+    border-top: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+.link-btn {
+    text-decoration: none;
+    background: var(--herta-main);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    transition: 0.2s;
+}
+
+.link-btn:hover {
+    background: var(--herta-dark);
+}
+
