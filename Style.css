@@ -1,0 +1,208 @@
+body{
+  margin:0;
+  background-color: #333333;
+}
+ 
+main{
+  background-color: white;
+  width:90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding-bottom: 3px;
+  
+}
+ 
+ 
+header{
+  background-color: #cc0033;
+  color:white;
+  display:flex;
+ 
+}
+ 
+h1{
+  text-align: center;
+  margin:0;
+}
+ 
+h2{
+  text-align: center;
+  margin:0;
+  font-size: 1.1rem;
+}
+ 
+ 
+.gauche{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.droite{
+  width: 60%;
+}
+
+.gauche2{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.droite2{
+  width: 60%;
+}
+ 
+.droite div{
+  border: dashed 2px white ;
+  margin: 15px;
+  padding:15px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.droite item {
+  border: solid 2px white;    /* contour plein autour de chaque item */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;                    /* pour qu’ils prennent chacun la même largeur */
+  text-align: center;
+}
+
+
+#deux{
+  display: inline-block;
+}
+ 
+table{
+  border-collapse: collapse;
+  width:calc(100% - 30px);
+  margin:15px;
+}
+ 
+th{
+  border:solid 1px black;
+  background-color: #CC0033;
+  color:white;
+  
+  
+}
+ 
+td{
+  border:solid 1px black;
+  text-align: center;
+  background-color:	#E0E0E0;
+}
+
+
+.droite2 {
+  margin: 15px;
+  border: dashed 2px white ;
+  border-radius: 5px;
+  justify-content: center ;
+  display: flex;
+}
+
+
+
+.item {
+    margin: 15px;
+    padding: 20px;
+    width: 15%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    background: white;
+    color: #cc0033;
+    font-weight: bold;
+  }
+  
+  .left {
+    text-align: left;
+    padding-left: 45px;
+  }
+  
+
+  
+
+.comment-section {
+    margin: 60px auto 40px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.herta-bubble {
+    display: inline-block;
+    max-width: 600px;
+    background-color: #f4f0ff; /* Fond violet clair */
+    border: 3px solid #7d5bbe;  /* Bordure violette Herta bien nette */
+    border-radius: 25px;       /* Coins bien arrondis */
+    padding: 20px 40px;
+    box-shadow: 6px 6px 0px #7d5bbe; /* Ombre pleine style "flat design" */
+    text-align: center;
+    position: relative;
+}
+
+
+.bubble-tag {
+    display: block;
+    color: #7d5bbe;
+    font-weight: 800;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 1.5px;
+}
+
+
+.herta-bubble p {
+    margin: 0;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.back-home {
+    position: fixed; /* Reste visible même quand on scrolle */
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    background-color: #7d5bbe; /* Violet Herta */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(125, 91, 190, 0.3);
+    z-index: 1000; /* Passe au-dessus de tout */
+    transition: all 0.3s ease;
+    border: 2px solid white;
+}
+
+.back-home:hover {
+    background-color: #4b307d; /* Violet plus foncé au survol */
+    transform: translateX(5px); /* Petit mouvement vers la droite */
+    box-shadow: 0 6px 15px rgba(75, 48, 125, 0.4);
+}
+
+.back-home .icon {
+    font-size: 1.1rem;
+}
+
+/* On cache le bouton sur les très petits écrans si besoin, 
+   ou on le rend plus discret */
+@media (max-width: 480px) {
+    .back-home {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}

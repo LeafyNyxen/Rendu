@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exerice 1</title>
+<link href="Style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <main> 
+    <section>
+      <header>
+        <div class="gauche ">
+          <h1> FLEX CONTAINER </h1> 
+          <h2> (éléments parents) </h2> 
+        </div>
+        <div class="droite">
+          <div> <code>display: flex </code></div>
+          <div id="deux">display: inline-flex </div>
+        </div>
+
+      </header>
+      <div>
+        <table>
+          <tr>
+            <th> flex-direction</th>
+            <th> flex-wrap</th>
+            <th> flex-direction</th>
+            <th> flex-direction</th>
+            <th> flex-direction</th>
+          </tr>
+          <tr>
+            <td rowspan="2">
+              row <br>
+              row-reverse <br>
+              column <br>
+              column-reverse <br>
+            </td>
+            <td rowspan="2">
+              no-wrap <br>
+              wrap  <br>
+              wrap-reverse <br>
+            </td>
+            <td>Axe principal (Main)</td>
+            <td colspan="2">Axe secondaire (Cross)</td>
+          </tr>
+          <tr>
+            <td rowspan="3"> 
+              flex-start <br>
+              center <br>
+              space-between <br>
+              space-around<br>
+              space-evenly<br>
+            </td>
+
+            <td rowspan="3"> 
+              flex-start <br>
+              flex-end <br>
+              center <br>
+              baseline <br>
+              stretch <br>
+            </td>
+
+            <td rowspan="3"> 
+              flex-start <br>
+              center <br>
+              space-between <br>
+              space-around<br>
+              stretch <br>
+
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"> Flex-flow</td>
+          </tr>
+          <tr>
+            <td colspan="2">flex-direction + flex-wrap</td>
+          </tr>
+
+        </table>
+      </div>
+    </section>
+    <section>
+      <header>
+        <div class="gauche2 ">
+          <h1> FLEX ITEMS </h1> 
+          <h2> (éléments enfants) </h2>
+        </div>
+        <div class="droite2">
+          <div class="item">ITEM 1</div>
+          <div class="item">ITEM 2</div>
+          <div class="item">ITEM 3</div>
+        </div>
+      </header> 
+      <div class="T2">
+      <table>
+        <tr>
+          <th>order</th>
+          <td colspan="2" class="left"> 0</td>
+        </tr>
+        <tr>
+          <th>flex-grow</th>
+          <td>0</td>
+          <td rowspan="3">flex : 0 1 auto</td>
+        </tr>
+        <tr>
+          <th>flex-shrink</th>
+          <td>1</td>
+          
+        </tr>
+        <tr>
+          <th>flex-basis</th>
+          <td>auto</td>
+        
+        </tr>
+        
+        <tr>
+          <th>align-self</th>
+          <td colspan="2" class="left"> auto</td>
+        </tr>
+
+      </table>
+
+    </div>
+     
+    </section>
+  </main>
+<a href="../../index.html" class="back-home">
+    <span class="icon"></span> Retour à l'accueil
+</a>
+<section class="comment-section">
+    <div class="herta-bubble">
+        <span class="bubble-tag">Ce que le TP ma apporter</span>
+        <p>Sur l'exercice 1, nous avions pour objectif de reproduire un code qui n'utiliser que du flexbox,
+          le CSS était l'outil principal lors de l'éxecution de l'exercice comme nous devions utiliser le 
+          CSS dans tout l'espace. Le niveau de diffuculté est de ⭐⭐ l'exercice en soi n'est pas compliqué
+          mais la raison de pourquoi je considère qu'elle mérite 2 étoile sur 5 est dû à la partie CSS qui peut
+          impacter tout le code si une ligne n'est pas à la bonne taille (px,rem,%).
+          Le résultat ressemble de manière presque exact à la capture d'écran fourni dans le sujet même si 
+          cela n'est pas trait pour trait comme la capture.</p>
+    </div>
+</section>>
+
+</body>
+
+</html>
